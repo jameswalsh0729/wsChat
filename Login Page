@@ -1,0 +1,24 @@
+<!-- HTML for the landing page of the Web App. When the User first comes to the site they are met with the Login Screen -->
+<html>
+
+    <!-- Name of the Web Application will replace Placeholder Name -->
+    <head>
+        <title> Placeholder Name</title>
+    </head>
+
+    <!-- Header Welcoming User to the Page-->
+    <h1> Welcome to Placeholder Name! </h1>
+    <h3> Please login to continue. </h3>
+
+    <!-- Form with an embedded XSRF Token that prompts the Client for a username and password -->
+    <form action="/login" id="login-form" method="post" enctype="multipart/form-data">
+        <input value="Token" name="xsrf_token" hidden>
+        <label for="login-form-uname">Username: </label>
+        <input id="login-form-uname" type="text" name="name"><br/>
+        <label for="login-form-pword">Password: </label>
+        <input id="login-form-pword" type="text" name="comment"><br/>
+        <input type="submit" value="Submit">
+
+    </form>
+
+</html>

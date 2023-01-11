@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Chat Server / Cookie Game</title>
+    <link rel="stylesheet" type="text/css" href="login_style.css"/>
+</head>
+
+<h1>CHAT AND CLICK!</h1>
+
+<h3>Create user account</h3>
+
+<h4>Password Requirements: </h4>
+
+<p>1. A minimum length of 8 </p>
+<p>At least 1 lowercase character</p>  
+<p>3. At least 1 uppercase character </p>
+<p>4. At least 1 number</p>
+<p>5. At least 1 special character</p> 
+<p>6. Length must be a max of 32 </p>
+
+
+<form action="/create-account" id="Create-account-form" method="post" enctype="multipart/form-data">
+   <label for="Username1">Username: </label>
+   <input id="Username1" type="text" name="Username"><br/>
+   <label for="Password1">Password : </label>
+   <input id="Password1" type="text" name="Password"><br/>
+   <label for="form-file">Profile Picture: </label>
+   <input type="hidden" value="{replace token}" name="xsrf_token">
+   <input id="form-file" type="file" name="PFP"><br/>
+   <input type="submit" value="Submit">
+</form>
+
+<br/>
+
+<h3>User login form</h3>
+<form action="/login" id="Login-form" method="post" enctype="multipart/form-data">
+   <label for="Username2">Username: </label>
+   <input id="Username2" type="text" name="Username"><br/>
+   <label for="Password2">Password : </label>
+   <input id="Password2" type="text" name="Password"><br/>
+   <input type="submit" value="Submit">
+    <input type="hidden" value="{replace token}" name="xsrf_token">
+</form>
+
+
+<p><a href="/auth">Chat room</a></p>
+<p><a href="/cookie">Cookie Clicker</a></p>
+
+</body>
+</html>
+
+

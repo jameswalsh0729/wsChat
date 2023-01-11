@@ -1,0 +1,52 @@
+/* Change styling for body of site */
+body{
+   background-color: rgb(109, 109, 109);
+    
+}
+
+/* Change styling for all h1 headers */
+h1 {
+    color: honeydew;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+/* Change styling for all h3 headers */
+h3 {
+    color: honeydew;
+    text-align: left;
+    font-family: "Times New Roman", Times, serif;
+    text-decoration: underline;
+    
+}
+
+/* Change styling for all h4 headers */
+h4 {
+    color: honeydew;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Change styling for all p */
+p {
+    color: honeydew;
+    font-family: 'Times New Roman', Times, serif;
+    text-indent: 1%;
+
+}
+
+/* Change styling for all forms */
+form{
+    color: honeydew;
+    text-align: left;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+/* Change sytling for all input boxes */
+input {
+    font-family: 'Times New Roman', Times, serif;
+    
+}
